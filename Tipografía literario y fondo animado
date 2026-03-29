@@ -1,0 +1,31 @@
+<header class="portada">
+  <h1 class="titulo">Mis Cuentos</h1>
+</header>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+.portada {
+  background: linear-gradient(270deg, #f0e6d2, #d4c5a5);
+  background-size: 400% 400%;
+  animation: moverFondo 15s ease infinite;
+  padding: 50px;
+  text-align: center;
+}
+.titulo {
+  font-family: 'Cinzel', serif;
+  font-size: 3em;
+  color: #333;
+  animation: aparecer 2s ease forwards;
+  opacity: 0;
+}
+@keyframes moverFondo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
