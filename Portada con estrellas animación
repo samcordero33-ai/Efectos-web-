@@ -1,0 +1,27 @@
+<div class="portada-estrellas">
+  <h1>La Noche Misteriosa</h1>
+</div>
+
+<style>
+.portada-estrellas {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.portada-estrellas::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(white, transparent 70%);
+  animation: estrellas 10s linear infinite;
+}
+@keyframes estrellas {
+  from { transform: translate(0,0); }
+  to { transform: translate(-50px,-50px); }
+}
+</style>
+
