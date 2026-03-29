@@ -1,0 +1,16 @@
+<div class="portada-cuentos">
+  <img src="cuento1.jpg" class="cuento-img">
+  <img src="cuento2.jpg" class="cuento-img">
+</div>
+
+<style>
+.cuento-img {
+  width: 200px;
+  margin: 10px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+.cuento-img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
+</style>
